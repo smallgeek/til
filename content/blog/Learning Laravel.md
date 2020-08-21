@@ -15,3 +15,11 @@ title: "Laravel 学習メモ"
 ### シーディングを実行する
 ```$ php artisan db:seed```
 コマンドを実行することでテーブルにデータが登録される。
+
+## ルーティング
+
+### RESTful なルーティング
+```php
+// resource メソッドひとつで CRUD 画面用のメソッドとマッピングされる
+Route::resource('hoge', 'HogeController');
+```
