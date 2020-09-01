@@ -22,7 +22,7 @@ title: "Laravel 学習メモ"
 id メソッドを使わない場合は primary メソッドを使用することで PK を設定できる。
 ```php
 Schema::create('books', function (Blueprint $table) {
-    $table->integer('FARM_ID')->primary();
+    $table->integer('book_id')->primary();
 ```
 
 # コントローラー関連
